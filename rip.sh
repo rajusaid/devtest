@@ -1,0 +1,3 @@
+echo "helloworld"
+print "hai"
+
