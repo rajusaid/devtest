@@ -1,1 +1,3 @@
 echo "helloworld"
+print "hai"
+
