@@ -1,0 +1,27 @@
+{
+    "nexusConfig": {
+        "url": "http://devops.obphoenix.co.uk/nexus/",
+        "repos": [
+            "releases"
+        ],
+        "fileNameFilterRegex":{
+                "releases": ".+ob-common.+"
+            },
+        "credentialConfig": {
+            "secretArn": "arn:aws:secretsmanager:eu-west-2:444513610841:secret:ccoe-ob-nexus-creds-ks2xma",
+            "usernamePath": "userName",
+            "passwordPath": "password"
+        }
+    },
+    "artifactoryConfig": {
+        "url": "https://artifactory.aws.nbscloud.co.uk:443/artifactory",
+        "repos": [
+            "obcomply-maven-rel-local"
+        ],
+        "credentialConfig": {
+            "secretArn": "arn:aws:secretsmanager:eu-west-2:444513610841:secret:ccoe-ob-artifactory-creds-pQizoT",
+            "usernamePath": "username",
+            "passwordPath": "password"
+        }
+    }
+}
